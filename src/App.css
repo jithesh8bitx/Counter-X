@@ -1,0 +1,70 @@
+#root {
+  width: 100%;
+  padding: 24px;
+}
+
+.wrapper-div {
+  min-width: 320px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  color: dodgerblue;
+}
+
+.count {
+  font-size: 72px;
+  margin: 24px 0;
+  font-weight: bold;
+}
+
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 0;
+  color: #242424;
+  font-weight: 600;
+}
+
+button:active {
+  background-color: #242424;
+  color: whitesmoke;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-increment {
+  background-color: mediumseagreen;
+  color: whitesmoke;
+}
+
+.btn-decrement {
+  background-color: tomato;
+  color: whitesmoke;
+}
+
+.btn-reset {
+  background-color: gold;
+}
+
+.form-group {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline-color: blue;
+  border-style: solid;
+  border-color: #242424;
+}
