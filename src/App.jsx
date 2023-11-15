@@ -12,16 +12,21 @@ function App() {
   //component can access the state by using useSelector Hook
   const count = useSelector((state) => state.counter.value);
 
-  console.log(range);
   return (
     <div className="wrapper-div">
       <h1>Counter Application</h1>
       <p className="count">{count}</p>
       <div className="btn-div">
-        <button onClick={() => dispatch(increment())} className="btn-increment">
+        <button
+          onClick={() => dispatch(increment(Number(range)))}
+          className="btn-increment"
+        >
           Increment
         </button>
-        <button onClick={() => dispatch(decrement())} className="btn-decrement">
+        <button
+          onClick={() => dispatch(decrement(Number(range)))}
+          className="btn-decrement"
+        >
           Decrement
         </button>
         <button onClick={() => dispatch(reset())} className="btn-reset">
@@ -29,7 +34,7 @@ function App() {
         </button>
       </div>
       <div className="form-group" onChange={(e) => setRange(e.target.value)}>
-        <input type="text" name="range" placeholder="Enter the Range"/>
+        <input type="text" name="range" placeholder="Enter the Range" />
       </div>
     </div>
   );
